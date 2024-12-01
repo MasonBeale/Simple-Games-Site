@@ -14,14 +14,21 @@
             <label for="snakeColor">Snake Color:</label>
             <input type="color" id="snakeColor" value="#00FF00">
             <label for="boardSize">Board Size:</label>
-            <input type="number" id="boardSize" min="4" value="10"> 
+            <input type="number" id="boardSize" min="4" value="20"> 
             <label for="speed">Initial Speed:</label>
             <input type="number" id="speed" min="1" max="10" value="5">
             <label for="speedup">Speedup per Apple:</label>
-            <input type="number" id="speedup" step="0.1" value="0.1">
+            <input type="number" id="speedup" step="0.5" value="10">
             <button type="button" id="startGame">Start Game</button>
         </form>
         <div id="board"></div>
+        <div id="gameOver">
+            <h1>Game Over</h1>
+            <h2>Score:</h2>
+            <p id="finalScore"></p>
+            <button type="button" id="restart">Restart</button>
+            <button type="button" id="changeSettings">Settings</button>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
